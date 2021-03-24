@@ -419,5 +419,5 @@ site_tag_dic = {'Tank Farm': tank_farm_tags, 'Chocotech Kitchen': chocotech_kitc
 for tag_instance in site_tag_dic:
     try:
         insert_tuple_to_table(tag_instance, build_tuple_from_workstation_tuple(site_tag_dic[tag_instance], tag_instance))
-    except Exception:
+    except:
         print(tag_instance)
